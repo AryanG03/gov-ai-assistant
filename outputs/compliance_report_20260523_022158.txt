@@ -1,0 +1,37 @@
+COMPLIANCE REPORT
+============================================================
+Status:           FAILED
+Confidence Score: 0.55 / 1.00
+Threshold:        0.8
+Iterations Used:  3
+Fallback Used:    True
+
+HERMES SELF-CRITIQUE:
+
+COMPLIANCE ISSUES:
+  - Schema error: [] should be non-empty
+  - Rule failed: draft_addresses_obligations
+  - Rule failed: authorities_identified
+
+OBLIGATIONS:
+
+DEADLINES:
+
+AUTHORITIES:
+
+AMBIGUITIES DETECTED:
+  - No obligations found. Document may be ambiguous or non-standard.
+
+CONTRADICTIONS (multi-doc comparison):
+
+DEERFLOW WORKFLOW GRAPH:
+  [orchestrator] Load & chunk PDF (conditional=False, executed=False)
+  [analysis    ] Extract obligations (conditional=False, executed=False)
+  [analysis    ] Check ambiguities (conditional=True, executed=False)
+  [drafting    ] Draft response (conditional=True, executed=False)
+  [compliance  ] Compliance check (conditional=True, executed=False)
+  [orchestrator] Replan if needed (conditional=True, executed=False)
+  [orchestrator] Generate outputs (conditional=True, executed=False)
+  [analysis    ] Deep obligation search (conditional=False, executed=False)
+  [analysis    ] Resolve ambiguities (conditional=False, executed=False)
+  [drafting    ] Compliance-driven redraft (conditional=False, executed=False)

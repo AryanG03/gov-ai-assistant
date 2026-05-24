@@ -1,0 +1,9 @@
+{
+  "confidence_score": 1.0,
+  "threshold": 0.8,
+  "passed": true,
+  "iterations": 1,
+  "draft_version": 1,
+  "fallback_triggered": false,
+  "hermes_critique_count": 0
+}

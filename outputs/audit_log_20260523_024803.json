@@ -1,0 +1,165 @@
+{
+  "generated_at": "20260523_024803",
+  "total_iterations": 1,
+  "workflow_complete": true,
+  "fallback_triggered": false,
+  "audit_trail": [
+    {
+      "timestamp": "2026-05-23T02:34:23.676905",
+      "agent": "orchestrator",
+      "action": "pdf_loaded",
+      "detail": "pages=1, chars=656",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:34:23.679175",
+      "agent": "analysis",
+      "action": "started",
+      "detail": "chars=656",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:39:11.823375",
+      "agent": "analysis",
+      "action": "chunk_1",
+      "detail": "obligations=5",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:39:11.926240",
+      "agent": "analysis",
+      "action": "complete",
+      "detail": "obligations=5",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:39:11.937244",
+      "agent": "planner",
+      "action": "started",
+      "detail": "iteration=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:40:17.482703",
+      "agent": "planner",
+      "action": "complete",
+      "detail": "tasks=3, graph_nodes=7",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:40:17.482703",
+      "agent": "drafting",
+      "action": "started",
+      "detail": "iteration=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:45:50.945374",
+      "agent": "drafting",
+      "action": "complete",
+      "detail": "version=1, length=1595",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:45:50.945374",
+      "agent": "compliance",
+      "action": "started",
+      "detail": "iteration=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:48:03.902497",
+      "agent": "compliance",
+      "action": "complete",
+      "detail": "score=1.00, passed=True",
+      "iteration": 0
+    }
+  ],
+  "message_bus_log": [
+    {
+      "timestamp": "2026-05-23T02:39:11.829969",
+      "topic": "analysis_complete",
+      "sender": "analysis",
+      "payload": {
+        "obligations_count": 5,
+        "deadlines_count": 1,
+        "authorities_count": 5,
+        "ambiguities_count": 0
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:40:17.420192",
+      "topic": "plan_ready",
+      "sender": "planner",
+      "payload": {
+        "iteration": 0,
+        "task_count": 3,
+        "graph_nodes": 7,
+        "memory_used": true,
+        "compliance_issues": []
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:45:50.829477",
+      "topic": "draft_ready",
+      "sender": "drafting",
+      "payload": {
+        "version": 1,
+        "iteration": 0,
+        "length": 1595,
+        "action": "initial draft"
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:48:03.886919",
+      "topic": "compliance_result",
+      "sender": "compliance",
+      "payload": {
+        "confidence_score": 1.0,
+        "compliance_passed": true,
+        "issues_count": 0,
+        "iteration": 0,
+        "hermes_critique": []
+      }
+    }
+  ],
+  "episodic_memory": [
+    {
+      "timestamp": "2026-05-23T02:39:11.828971",
+      "agent": "analysis",
+      "action": "extraction_complete",
+      "result": "obligations=5, ambiguities=0"
+    },
+    {
+      "timestamp": "2026-05-23T02:39:11.944698",
+      "agent": "planner",
+      "action": "memory_recall",
+      "result": "Recalled past analysis for sample_gr"
+    },
+    {
+      "timestamp": "2026-05-23T02:40:17.482703",
+      "agent": "planner",
+      "action": "plan_created",
+      "result": "3 tasks, iteration 0"
+    },
+    {
+      "timestamp": "2026-05-23T02:40:17.482703",
+      "agent": "drafting",
+      "action": "few_shot_selected",
+      "result": "finance"
+    },
+    {
+      "timestamp": "2026-05-23T02:45:50.829477",
+      "agent": "drafting",
+      "action": "initial draft",
+      "result": "length=1595"
+    },
+    {
+      "timestamp": "2026-05-23T02:48:03.886919",
+      "agent": "compliance",
+      "action": "validation_complete",
+      "result": "score=1.00, passed=True"
+    }
+  ],
+  "error_log": []
+}

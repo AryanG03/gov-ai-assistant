@@ -1,0 +1,15 @@
+REASONING STEPS
+============================================================
+Step 01: [Analysis] PDF length: 656 chars.
+Step 02: [Analysis] Split into 1 chunk(s).
+Step 03: [Analysis] Processing chunk 1/1...
+Step 04: [Analysis] Found 5 obligations, 1 deadlines, 5 authorities, 0 ambiguities.
+Step 05: [Planner] Starting at iteration 0.
+Step 06: [Planner] Found past GR interpretation in long-term memory.
+Step 07: [Planner] DeerFlow graph built with 7 nodes.
+Step 08: [Drafting] Few-shot adaptation: 'finance' template selected.
+Step 09: [Drafting] Creating initial draft.
+Step 10: [Drafting] Draft v1 created (1838 chars).
+Step 11: [Compliance] Running validation at iteration 0.
+Step 12: [Compliance] Rule-based score: 1.00. Passed: ['has_reference_number', 'has_effective_date', 'draft_is_formal', 'draft_addresses_obligations', 'authorities_identified']. Failed: [].
+Step 13: [Compliance] After Hermes self-critique: score=1.00, passed=True, critique_issues=0.

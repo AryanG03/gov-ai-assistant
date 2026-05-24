@@ -1,0 +1,5 @@
+praisonaiagents>=0.0.1
+openai>=1.0.0
+pymupdf>=1.23.0
+rich>=13.0.0
+jsonschema>=4.0.0

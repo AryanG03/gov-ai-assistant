@@ -1,0 +1,83 @@
+{
+  "pdf_path": "sample_docs\\sample_gr.pdf",
+  "obligations": [],
+  "deadlines": [],
+  "authorities": [],
+  "applicability": [],
+  "ambiguities": [
+    "No obligations found. Document may be ambiguous or non-standard."
+  ],
+  "contradictions": [],
+  "draft_response": "Subject: Compliance with Government Circular — Action Taken Report\n\nSir/Madam,\n\nWith reference to the circular issued by Competent Authority, this office hereby\nacknowledges receipt and confirms compliance with all directives.\n\nPursuant to the directives contained therein, the following obligations\nhave been noted and action initiated:\n\n  - As per circular directives\n\nIt is hereby intimated that compliance shall be ensured by As specified in circular.\nThe concerned departments have been duly instructed in accordance with\nthe requirements of the said circular.\n\nThis issues with the approval of the competent authority.\n\nYours faithfully,\n\n[Designation]\n[Department]\nDate: 23-May-2026",
+  "draft_version": 3,
+  "compliance_passed": false,
+  "compliance_issues": [
+    "Schema error: [] should be non-empty",
+    "Rule failed: draft_addresses_obligations",
+    "Rule failed: authorities_identified"
+  ],
+  "confidence_score": 0.55,
+  "self_critique": [],
+  "reasoning_steps": [
+    "[Analysis] PDF length: 656 chars.",
+    "[Analysis] Split into 1 chunk(s).",
+    "[Analysis] Processing chunk 1/1...",
+    "[Analysis] No obligations extracted. Flagging as ambiguous.",
+    "[Analysis] Found 0 obligations, 0 deadlines, 0 authorities, 1 ambiguities.",
+    "[Planner] Starting at iteration 0.",
+    "[Planner] Found past GR interpretation in long-term memory.",
+    "[Planner] DeerFlow graph built with 7 nodes.",
+    "[DeerFlow] Replanned workflow: ['Deep obligation search', 'Resolve ambiguities']",
+    "[Drafting] Few-shot adaptation: 'finance' template selected.",
+    "[Drafting] Creating initial draft.",
+    "[Drafting] LLM returned empty draft. Using structured fallback.",
+    "[Drafting] Draft v1 created (689 chars).",
+    "[Compliance] Running validation at iteration 0.",
+    "[Compliance] Rule-based score: 0.55. Passed: ['has_reference_number', 'has_effective_date', 'draft_is_formal']. Failed: ['draft_addresses_obligations', 'authorities_identified'].",
+    "[Compliance] After Hermes self-critique: score=0.55, passed=False, critique_issues=0.",
+    "[Planner] Starting at iteration 1.",
+    "[Planner] Found past GR interpretation in long-term memory.",
+    "[Planner] DeerFlow graph built with 7 nodes.",
+    "[DeerFlow] Replanned workflow: ['Deep obligation search', 'Resolve ambiguities', 'Compliance-driven redraft']",
+    "[Drafting] Few-shot adaptation: 'finance' template selected.",
+    "[Drafting] Negotiation round 1: addressing 3 issues.",
+    "[Drafting] LLM returned empty draft. Using structured fallback.",
+    "[Drafting] Draft v2 created (689 chars).",
+    "[Compliance] Running validation at iteration 1.",
+    "[Compliance] Rule-based score: 0.55. Passed: ['has_reference_number', 'has_effective_date', 'draft_is_formal']. Failed: ['draft_addresses_obligations', 'authorities_identified'].",
+    "[Compliance] After Hermes self-critique: score=0.55, passed=False, critique_issues=0.",
+    "[Planner] Starting at iteration 2.",
+    "[Planner] Found past GR interpretation in long-term memory.",
+    "[Planner] DeerFlow graph built with 7 nodes.",
+    "[DeerFlow] Replanned workflow: ['Deep obligation search', 'Resolve ambiguities', 'Compliance-driven redraft']",
+    "[Drafting] Few-shot adaptation: 'finance' template selected.",
+    "[Drafting] Negotiation round 2: addressing 3 issues.",
+    "[Drafting] LLM returned empty draft. Using structured fallback.",
+    "[Drafting] Draft v3 created (689 chars).",
+    "[Compliance] Running validation at iteration 2.",
+    "[Compliance] Rule-based score: 0.55. Passed: ['has_reference_number', 'has_effective_date', 'draft_is_formal']. Failed: ['draft_addresses_obligations', 'authorities_identified'].",
+    "[Compliance] After Hermes self-critique: score=0.55, passed=False, critique_issues=0."
+  ],
+  "iterations_taken": 3,
+  "task_plan": [
+    {
+      "step": 1,
+      "agent": "analysis",
+      "task": "Extract all obligations, deadlines, authorities",
+      "status": "pending"
+    },
+    {
+      "step": 2,
+      "agent": "drafting",
+      "task": "Draft official government response",
+      "status": "pending"
+    },
+    {
+      "step": 3,
+      "agent": "compliance",
+      "task": "Validate draft and score compliance",
+      "status": "pending"
+    }
+  ],
+  "fallback_triggered": true
+}

@@ -1,0 +1,64 @@
+{
+  "last_draft_style": {
+    "value": {
+      "tone": "formal",
+      "version": 1,
+      "length": 1891
+    },
+    "timestamp": "2026-05-23T03:38:32.204725"
+  },
+  "last_compliance_result": {
+    "value": {
+      "score": 1.0,
+      "passed": true,
+      "issues": []
+    },
+    "timestamp": "2026-05-23T03:41:11.322029"
+  },
+  "sample_gr": {
+    "value": {
+      "obligations": [
+        "Submit monthly utilization certificates by the 5th of each month.",
+        "Maintain separate accounts for all scheme funds.",
+        "Report any irregularities to the Finance Secretary immediately.",
+        "This circular is applicable to all government offices receiving state funds.",
+        "Deadline: First submission due by 05-February-2024."
+      ],
+      "deadlines": [
+        "Deadline for first submission: 05-February-2024."
+      ],
+      "authorities": [
+        "Government of Maharashtra",
+        "Finance Department",
+        "District Collectors",
+        "Heads of Departments",
+        "Finance Secretary, Government of Maharashtra"
+      ],
+      "doc_path": "sample_docs\\sample_gr.pdf"
+    },
+    "timestamp": "2026-05-23T03:23:23.701719"
+  },
+  "tmprx272lrd": {
+    "value": {
+      "obligations": [
+        "Submit monthly utilization certificates by the 5th of each month.",
+        "Maintain separate accounts for all scheme funds.",
+        "Report any irregularities to the Finance Secretary immediately.",
+        "This circular is applicable to all government offices receiving state funds.",
+        "Deadline: First submission due by 05-February-2024."
+      ],
+      "deadlines": [
+        "Deadline for first submission: 05-February-2024."
+      ],
+      "authorities": [
+        "Government of Maharashtra",
+        "Finance Department",
+        "District Collectors",
+        "Heads of Departments",
+        "Finance Secretary, Government of Maharashtra"
+      ],
+      "doc_path": "C:\\Users\\DIA\\AppData\\Local\\Temp\\tmprx272lrd.pdf"
+    },
+    "timestamp": "2026-05-23T03:41:11.339647"
+  }
+}

@@ -1,0 +1,41 @@
+COMPLIANCE REPORT
+============================================================
+Status:           PASSED
+Confidence Score: 1.00 / 1.00
+Threshold:        0.8
+Iterations Used:  1
+Fallback Used:    False
+
+HERMES SELF-CRITIQUE:
+
+COMPLIANCE ISSUES:
+
+OBLIGATIONS:
+  1. Submit monthly utilization certificates by the 5th of each month.
+  2. Maintain separate accounts for all scheme funds.
+  3. Report any irregularities to the Finance Secretary immediately.
+  4. This circular is applicable to all government offices receiving state funds.
+  5. Deadline: First submission due by 05-February-2024.
+
+DEADLINES:
+  - Deadline for first submission: 05-February-2024.
+
+AUTHORITIES:
+  - Government of Maharashtra
+  - Finance Department
+  - District Collectors
+  - Heads of Departments
+  - Finance Secretary, Government of Maharashtra
+
+AMBIGUITIES DETECTED:
+
+CONTRADICTIONS (multi-doc comparison):
+
+DEERFLOW WORKFLOW GRAPH:
+  [orchestrator] Load & chunk PDF (conditional=False, executed=False)
+  [analysis    ] Extract obligations (conditional=False, executed=False)
+  [analysis    ] Check ambiguities (conditional=True, executed=False)
+  [drafting    ] Draft response (conditional=True, executed=False)
+  [compliance  ] Compliance check (conditional=True, executed=False)
+  [orchestrator] Replan if needed (conditional=True, executed=False)
+  [orchestrator] Generate outputs (conditional=True, executed=False)

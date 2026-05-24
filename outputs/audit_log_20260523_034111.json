@@ -1,0 +1,159 @@
+{
+  "generated_at": "20260523_034111",
+  "total_iterations": 1,
+  "workflow_complete": true,
+  "fallback_triggered": false,
+  "audit_trail": [
+    {
+      "timestamp": "2026-05-23T03:29:58.974921",
+      "agent": "orchestrator",
+      "action": "pdf_loaded",
+      "detail": "pages=1",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T03:29:58.976924",
+      "agent": "analysis",
+      "action": "started",
+      "detail": "chars=656",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T03:32:10.424935",
+      "agent": "analysis",
+      "action": "chunk_1",
+      "detail": "obligations=5",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T03:32:10.424935",
+      "agent": "analysis",
+      "action": "complete",
+      "detail": "obligations=5",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T03:32:10.546495",
+      "agent": "planner",
+      "action": "started",
+      "detail": "iteration=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T03:32:41.789421",
+      "agent": "planner",
+      "action": "complete",
+      "detail": "tasks=3, graph_nodes=7",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T03:32:41.805074",
+      "agent": "drafting",
+      "action": "started",
+      "detail": "iteration=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T03:38:32.241998",
+      "agent": "drafting",
+      "action": "complete",
+      "detail": "version=1, length=1891",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T03:38:32.268569",
+      "agent": "compliance",
+      "action": "started",
+      "detail": "iteration=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T03:41:11.322880",
+      "agent": "compliance",
+      "action": "complete",
+      "detail": "score=1.00, passed=True",
+      "iteration": 0
+    }
+  ],
+  "message_bus_log": [
+    {
+      "timestamp": "2026-05-23T03:32:10.424935",
+      "topic": "analysis_complete",
+      "sender": "analysis",
+      "payload": {
+        "obligations_count": 5,
+        "deadlines_count": 1,
+        "authorities_count": 5,
+        "ambiguities_count": 0
+      }
+    },
+    {
+      "timestamp": "2026-05-23T03:32:41.789421",
+      "topic": "plan_ready",
+      "sender": "planner",
+      "payload": {
+        "iteration": 0,
+        "task_count": 3,
+        "graph_nodes": 7,
+        "memory_used": false,
+        "compliance_issues": []
+      }
+    },
+    {
+      "timestamp": "2026-05-23T03:38:32.240972",
+      "topic": "draft_ready",
+      "sender": "drafting",
+      "payload": {
+        "version": 1,
+        "iteration": 0,
+        "length": 1891,
+        "action": "initial draft"
+      }
+    },
+    {
+      "timestamp": "2026-05-23T03:41:11.322880",
+      "topic": "compliance_result",
+      "sender": "compliance",
+      "payload": {
+        "confidence_score": 1.0,
+        "compliance_passed": true,
+        "issues_count": 0,
+        "iteration": 0,
+        "hermes_critique": []
+      }
+    }
+  ],
+  "episodic_memory": [
+    {
+      "timestamp": "2026-05-23T03:32:10.424935",
+      "agent": "analysis",
+      "action": "extraction_complete",
+      "result": "obligations=5, ambiguities=0"
+    },
+    {
+      "timestamp": "2026-05-23T03:32:41.789421",
+      "agent": "planner",
+      "action": "plan_created",
+      "result": "3 tasks, iteration 0"
+    },
+    {
+      "timestamp": "2026-05-23T03:32:41.805074",
+      "agent": "drafting",
+      "action": "few_shot_selected",
+      "result": "finance"
+    },
+    {
+      "timestamp": "2026-05-23T03:38:32.240972",
+      "agent": "drafting",
+      "action": "initial draft",
+      "result": "length=1891"
+    },
+    {
+      "timestamp": "2026-05-23T03:41:11.321030",
+      "agent": "compliance",
+      "action": "validation_complete",
+      "result": "score=1.00, passed=True"
+    }
+  ],
+  "error_log": []
+}

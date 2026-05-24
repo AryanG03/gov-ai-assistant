@@ -1,0 +1,40 @@
+REASONING STEPS
+============================================================
+Step 01: [Analysis] PDF length: 656 chars.
+Step 02: [Analysis] Split into 1 chunk(s).
+Step 03: [Analysis] Processing chunk 1/1...
+Step 04: [Analysis] No obligations extracted. Flagging as ambiguous.
+Step 05: [Analysis] Found 0 obligations, 0 deadlines, 0 authorities, 1 ambiguities.
+Step 06: [Planner] Starting at iteration 0.
+Step 07: [Planner] Found past GR interpretation in long-term memory.
+Step 08: [Planner] DeerFlow graph built with 7 nodes.
+Step 09: [DeerFlow] Replanned workflow: ['Deep obligation search', 'Resolve ambiguities']
+Step 10: [Drafting] Few-shot adaptation: 'finance' template selected.
+Step 11: [Drafting] Creating initial draft.
+Step 12: [Drafting] LLM returned empty draft. Using structured fallback.
+Step 13: [Drafting] Draft v1 created (689 chars).
+Step 14: [Compliance] Running validation at iteration 0.
+Step 15: [Compliance] Rule-based score: 0.55. Passed: ['has_reference_number', 'has_effective_date', 'draft_is_formal']. Failed: ['draft_addresses_obligations', 'authorities_identified'].
+Step 16: [Compliance] After Hermes self-critique: score=0.55, passed=False, critique_issues=0.
+Step 17: [Planner] Starting at iteration 1.
+Step 18: [Planner] Found past GR interpretation in long-term memory.
+Step 19: [Planner] DeerFlow graph built with 7 nodes.
+Step 20: [DeerFlow] Replanned workflow: ['Deep obligation search', 'Resolve ambiguities', 'Compliance-driven redraft']
+Step 21: [Drafting] Few-shot adaptation: 'finance' template selected.
+Step 22: [Drafting] Negotiation round 1: addressing 3 issues.
+Step 23: [Drafting] LLM returned empty draft. Using structured fallback.
+Step 24: [Drafting] Draft v2 created (689 chars).
+Step 25: [Compliance] Running validation at iteration 1.
+Step 26: [Compliance] Rule-based score: 0.55. Passed: ['has_reference_number', 'has_effective_date', 'draft_is_formal']. Failed: ['draft_addresses_obligations', 'authorities_identified'].
+Step 27: [Compliance] After Hermes self-critique: score=0.55, passed=False, critique_issues=0.
+Step 28: [Planner] Starting at iteration 2.
+Step 29: [Planner] Found past GR interpretation in long-term memory.
+Step 30: [Planner] DeerFlow graph built with 7 nodes.
+Step 31: [DeerFlow] Replanned workflow: ['Deep obligation search', 'Resolve ambiguities', 'Compliance-driven redraft']
+Step 32: [Drafting] Few-shot adaptation: 'finance' template selected.
+Step 33: [Drafting] Negotiation round 2: addressing 3 issues.
+Step 34: [Drafting] LLM returned empty draft. Using structured fallback.
+Step 35: [Drafting] Draft v3 created (689 chars).
+Step 36: [Compliance] Running validation at iteration 2.
+Step 37: [Compliance] Rule-based score: 0.55. Passed: ['has_reference_number', 'has_effective_date', 'draft_is_formal']. Failed: ['draft_addresses_obligations', 'authorities_identified'].
+Step 38: [Compliance] After Hermes self-critique: score=0.55, passed=False, critique_issues=0.

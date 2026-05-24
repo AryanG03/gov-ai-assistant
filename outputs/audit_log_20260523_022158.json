@@ -1,0 +1,387 @@
+{
+  "generated_at": "20260523_022158",
+  "total_iterations": 3,
+  "workflow_complete": true,
+  "fallback_triggered": true,
+  "audit_trail": [
+    {
+      "timestamp": "2026-05-23T02:21:56.943212",
+      "agent": "orchestrator",
+      "action": "pdf_loaded",
+      "detail": "pages=1, chars=656",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:56.943212",
+      "agent": "analysis",
+      "action": "started",
+      "detail": "chars=656",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.223821",
+      "agent": "analysis",
+      "action": "chunk_1",
+      "detail": "obligations=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.223821",
+      "agent": "analysis",
+      "action": "complete",
+      "detail": "obligations=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.223821",
+      "agent": "planner",
+      "action": "started",
+      "detail": "iteration=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.250506",
+      "agent": "planner",
+      "action": "complete",
+      "detail": "tasks=3, graph_nodes=7",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.252021",
+      "agent": "drafting",
+      "action": "started",
+      "detail": "iteration=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.270035",
+      "agent": "drafting",
+      "action": "complete",
+      "detail": "version=1, length=689",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.270035",
+      "agent": "compliance",
+      "action": "started",
+      "detail": "iteration=0",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.296472",
+      "agent": "compliance",
+      "action": "complete",
+      "detail": "score=0.55, passed=False",
+      "iteration": 0
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.296472",
+      "agent": "planner",
+      "action": "started",
+      "detail": "iteration=1",
+      "iteration": 1
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.310648",
+      "agent": "planner",
+      "action": "complete",
+      "detail": "tasks=3, graph_nodes=7",
+      "iteration": 1
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.310648",
+      "agent": "drafting",
+      "action": "started",
+      "detail": "iteration=1",
+      "iteration": 1
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.340071",
+      "agent": "drafting",
+      "action": "complete",
+      "detail": "version=2, length=689",
+      "iteration": 1
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.340071",
+      "agent": "compliance",
+      "action": "started",
+      "detail": "iteration=1",
+      "iteration": 1
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.355968",
+      "agent": "compliance",
+      "action": "complete",
+      "detail": "score=0.55, passed=False",
+      "iteration": 1
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.355968",
+      "agent": "planner",
+      "action": "started",
+      "detail": "iteration=2",
+      "iteration": 2
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.361094",
+      "agent": "planner",
+      "action": "complete",
+      "detail": "tasks=3, graph_nodes=7",
+      "iteration": 2
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.361094",
+      "agent": "drafting",
+      "action": "started",
+      "detail": "iteration=2",
+      "iteration": 2
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.378555",
+      "agent": "drafting",
+      "action": "complete",
+      "detail": "version=3, length=689",
+      "iteration": 2
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.378555",
+      "agent": "compliance",
+      "action": "started",
+      "detail": "iteration=2",
+      "iteration": 2
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.395377",
+      "agent": "compliance",
+      "action": "complete",
+      "detail": "score=0.55, passed=False",
+      "iteration": 2
+    }
+  ],
+  "message_bus_log": [
+    {
+      "timestamp": "2026-05-23T02:21:58.223821",
+      "topic": "analysis_complete",
+      "sender": "analysis",
+      "payload": {
+        "obligations_count": 0,
+        "deadlines_count": 0,
+        "authorities_count": 0,
+        "ambiguities_count": 1
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.242890",
+      "topic": "plan_ready",
+      "sender": "planner",
+      "payload": {
+        "iteration": 0,
+        "task_count": 3,
+        "graph_nodes": 7,
+        "memory_used": true,
+        "compliance_issues": []
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.261968",
+      "topic": "draft_ready",
+      "sender": "drafting",
+      "payload": {
+        "version": 1,
+        "iteration": 0,
+        "length": 689,
+        "action": "initial draft"
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.296472",
+      "topic": "compliance_result",
+      "sender": "compliance",
+      "payload": {
+        "confidence_score": 0.55,
+        "compliance_passed": false,
+        "issues_count": 3,
+        "iteration": 0,
+        "hermes_critique": []
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.310648",
+      "topic": "plan_ready",
+      "sender": "planner",
+      "payload": {
+        "iteration": 1,
+        "task_count": 3,
+        "graph_nodes": 7,
+        "memory_used": true,
+        "compliance_issues": [
+          "Schema error: [] should be non-empty",
+          "Rule failed: draft_addresses_obligations",
+          "Rule failed: authorities_identified"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.336831",
+      "topic": "draft_ready",
+      "sender": "drafting",
+      "payload": {
+        "version": 2,
+        "iteration": 1,
+        "length": 689,
+        "action": "negotiation revision v2"
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.355968",
+      "topic": "compliance_result",
+      "sender": "compliance",
+      "payload": {
+        "confidence_score": 0.55,
+        "compliance_passed": false,
+        "issues_count": 3,
+        "iteration": 1,
+        "hermes_critique": []
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.361094",
+      "topic": "plan_ready",
+      "sender": "planner",
+      "payload": {
+        "iteration": 2,
+        "task_count": 3,
+        "graph_nodes": 7,
+        "memory_used": true,
+        "compliance_issues": [
+          "Schema error: [] should be non-empty",
+          "Rule failed: draft_addresses_obligations",
+          "Rule failed: authorities_identified"
+        ]
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.378555",
+      "topic": "draft_ready",
+      "sender": "drafting",
+      "payload": {
+        "version": 3,
+        "iteration": 2,
+        "length": 689,
+        "action": "negotiation revision v3"
+      }
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.395377",
+      "topic": "compliance_result",
+      "sender": "compliance",
+      "payload": {
+        "confidence_score": 0.55,
+        "compliance_passed": false,
+        "issues_count": 3,
+        "iteration": 2,
+        "hermes_critique": []
+      }
+    }
+  ],
+  "episodic_memory": [
+    {
+      "timestamp": "2026-05-23T02:21:58.223821",
+      "agent": "analysis",
+      "action": "extraction_complete",
+      "result": "obligations=0, ambiguities=1"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.223821",
+      "agent": "planner",
+      "action": "memory_recall",
+      "result": "Recalled past analysis for sample_gr"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.250506",
+      "agent": "planner",
+      "action": "plan_created",
+      "result": "3 tasks, iteration 0"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.252021",
+      "agent": "drafting",
+      "action": "few_shot_selected",
+      "result": "finance"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.261968",
+      "agent": "drafting",
+      "action": "initial draft",
+      "result": "length=689"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.296472",
+      "agent": "compliance",
+      "action": "validation_complete",
+      "result": "score=0.55, passed=False"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.296472",
+      "agent": "planner",
+      "action": "memory_recall",
+      "result": "Recalled past analysis for sample_gr"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.310648",
+      "agent": "planner",
+      "action": "plan_created",
+      "result": "3 tasks, iteration 1"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.310648",
+      "agent": "drafting",
+      "action": "few_shot_selected",
+      "result": "finance"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.336831",
+      "agent": "drafting",
+      "action": "negotiation revision v2",
+      "result": "length=689"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.352044",
+      "agent": "compliance",
+      "action": "validation_complete",
+      "result": "score=0.55, passed=False"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.355968",
+      "agent": "planner",
+      "action": "memory_recall",
+      "result": "Recalled past analysis for sample_gr"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.361094",
+      "agent": "planner",
+      "action": "plan_created",
+      "result": "3 tasks, iteration 2"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.361094",
+      "agent": "drafting",
+      "action": "few_shot_selected",
+      "result": "finance"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.378555",
+      "agent": "drafting",
+      "action": "negotiation revision v3",
+      "result": "length=689"
+    },
+    {
+      "timestamp": "2026-05-23T02:21:58.395377",
+      "agent": "compliance",
+      "action": "validation_complete",
+      "result": "score=0.55, passed=False"
+    }
+  ],
+  "error_log": []
+}

@@ -1,0 +1,26 @@
+COMPLIANCE REPORT
+============================================================
+Status: PASSED
+Score: 1.00
+Iterations: 1
+
+OBLIGATIONS:
+  - Submit monthly utilization certificates by the 5th of each month.
+  - Maintain separate accounts for all scheme funds.
+  - Report any irregularities to the Finance Secretary immediately.
+  - This circular is applicable to all government offices receiving state funds.
+  - Deadline: First submission due by 05-February-2024.
+
+DEADLINES:
+  - Deadline for first submission: 05-February-2024.
+
+AUTHORITIES:
+  - Government of Maharashtra
+  - Finance Department
+  - District Collectors
+  - Heads of Departments
+  - Finance Secretary, Government of Maharashtra
+
+HERMES CRITIQUE:
+
+CONTRADICTIONS:
