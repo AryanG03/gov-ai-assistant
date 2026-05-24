@@ -1,13 +1,6 @@
 venv/
 .git/
-
 __pycache__/
-*.pyc
-
 outputs/
-
-.env
-
 .vscode/
-
 *.log
