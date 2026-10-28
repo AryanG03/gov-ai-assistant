@@ -9,8 +9,8 @@ from memory.workflow_state import WorkflowState
 from memory.message_bus import MessageBus
 from memory.praison_memory import PraisonMemory
 from tools.validator import run_full_validation
-from config import (LM_STUDIO_BASE_URL, LM_STUDIO_API_KEY,
-                    HERMES_MODEL, COMPLIANCE_THRESHOLD)
+from config import (LM_STUDIO_BASE_URL, LM_STUDIO_API_KEY, HERMES_MODEL)
+import config
 
 hermes_client = OpenAI(base_url=LM_STUDIO_BASE_URL, api_key=LM_STUDIO_API_KEY)
 
@@ -45,7 +45,7 @@ def run_compliance(state: WorkflowState, bus: MessageBus,
     result = run_full_validation(state)
     state.confidence_score  = result["confidence_score"]
     state.compliance_issues = result["issues"]
-    state.compliance_passed = result["compliance_passed"]
+    state.compliance_passed = state.confidence_score >= config.COMPLIANCE_THRESHOLD
 
     state.log_reasoning("Compliance",
         f"Rule-based score: {state.confidence_score:.2f}. "

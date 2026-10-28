@@ -3,17 +3,19 @@
     "value": {
       "tone": "formal",
       "version": 1,
-      "length": 1891
+      "length": 1383
     },
-    "timestamp": "2026-05-23T03:38:32.204725"
+    "timestamp": "2026-05-25T00:13:07.576277"
   },
   "last_compliance_result": {
     "value": {
       "score": 1.0,
       "passed": true,
-      "issues": []
+      "issues": [
+        "Schema error: [] should be non-empty"
+      ]
     },
-    "timestamp": "2026-05-23T03:41:11.322029"
+    "timestamp": "2026-05-25T00:15:55.163167"
   },
   "sample_gr": {
     "value": {
@@ -60,5 +62,45 @@
       "doc_path": "C:\\Users\\DIA\\AppData\\Local\\Temp\\tmprx272lrd.pdf"
     },
     "timestamp": "2026-05-23T03:41:11.339647"
+  },
+  "tmpedczjmb5": {
+    "value": {
+      "obligations": [
+        "Submit utilization certificates by the 10th of each month (REVISED from previous 5th of month deadline).",
+        "Use the new Form UC-2024 for all submissions.",
+        "Digital submission is now mandatory via the state portal. Deadline: Effective from 01-March-2024."
+      ],
+      "deadlines": [
+        "10th of each month",
+        "01-March-2024 (for digital submission to become mandatory)"
+      ],
+      "authorities": [
+        "Government of Maharashtra",
+        "Finance Department",
+        "Principal Secretary, Finance Department"
+      ],
+      "doc_path": "C:\\Users\\DIA\\AppData\\Local\\Temp\\tmpedczjmb5.pdf"
+    },
+    "timestamp": "2026-05-25T00:00:14.195339"
+  },
+  "tmpck73hmur": {
+    "value": {
+      "obligations": [
+        "Submit utilization certificates by the 10th of each month (REVISED from previous 5th of month deadline).",
+        "Use the new Form UC-2024 for all submissions.",
+        "Digital submission is now mandatory via the state portal. Deadline: Effective from 01-March-2024."
+      ],
+      "deadlines": [
+        "10th of each month",
+        "01-March-2024 (for digital submission to become mandatory)"
+      ],
+      "authorities": [
+        "Government of Maharashtra",
+        "Finance Department",
+        "Principal Secretary, Finance Department"
+      ],
+      "doc_path": "C:\\Users\\DIA\\AppData\\Local\\Temp\\tmpck73hmur.pdf"
+    },
+    "timestamp": "2026-05-25T00:15:55.163167"
   }
 }
